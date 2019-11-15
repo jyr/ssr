@@ -1,4 +1,4 @@
-import * as API from "../management"
+import API from "../management"
 import client from "../client";
 
 export const getUser = async (id) => {
