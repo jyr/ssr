@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
-import axios from 'axios'
+
+import client from "../utils/api/client";
 
 const Home = ({userContent}) => (
   <div>
@@ -18,7 +19,7 @@ const Home = ({userContent}) => (
 )
 
 Home.getInitialProps = async () => {
-  const res = await axios.get(`https://jsonplaceholder.typicode.com/users/1`)
+  const res = await client.get('/users/1')
   const userContent = res.data
 
   return { userContent }
