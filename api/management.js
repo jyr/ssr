@@ -1,4 +1,4 @@
-export const API_BASE='https://jsonplaceholder.typicode.com/'
+const API_BASE='https://jsonplaceholder.typicode.com/'
 
 module.exports.Endpoints = {
   users: `${API_BASE}users/`,

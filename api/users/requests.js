@@ -1,5 +1,5 @@
-import client from "../../utils/api/client";
-import * as API from "../../constants/api/management"
+import * as API from "../management"
+import client from "../client";
 
 export const getUser = async (id) => {
   try {
