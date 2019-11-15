@@ -5,6 +5,7 @@ import Nav from '../components/nav'
 import { getUser } from '../api/users/requests'
 import client from "../utils/api/client";
 
+
 const Home = ({userContent}) => (
   <div>
     <Head title='Home' />
