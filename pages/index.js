@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
-import fetch from 'isomorphic-unfetch';
+import axios from 'axios'
 
 const Home = ({userContent}) => (
   <div>
@@ -18,9 +18,8 @@ const Home = ({userContent}) => (
 )
 
 Home.getInitialProps = async () => {
-  const userContent = await fetch(
-    `https://jsonplaceholder.typicode.com/users/1`
-  ).then(r => r.json())
+  const res = await axios.get(`https://jsonplaceholder.typicode.com/users/1`)
+  const userContent = res.data
 
   return { userContent }
 }
