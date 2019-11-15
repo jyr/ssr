@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Nav from '../components/nav'
 
 import { getUser } from '../api/users/requests'
-import client from "../api/client";
 
 
 const Home = ({userContent}) => (

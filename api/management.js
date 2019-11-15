@@ -1,7 +1,7 @@
 const API_BASE='https://jsonplaceholder.typicode.com/'
 
 export default {
-  Endpoints: {
+  endPoints: {
     users: `${API_BASE}users/`,
     auth: '/auth'
   }
